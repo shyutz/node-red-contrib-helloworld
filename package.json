@@ -7,7 +7,7 @@
     "keywords": [ "node-red" ],
     "node-red"     : {
         "nodes": {
-            "helloworld": "sample/helloworld.js"
+            "helloworld": "sample/httprequest.js"
         }
     }
 }
