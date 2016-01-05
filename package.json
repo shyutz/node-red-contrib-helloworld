@@ -3,6 +3,8 @@
     "version"      : "0.0.1",
     "description"  : "A sample node for node-red",
     "dependencies": {
+        "follow-redirects":"0.0.7",
+        "mustache": "2.2.0"
     },
     "keywords": [ "node-red" ],
     "node-red"     : {
