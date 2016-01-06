@@ -1,4 +1,20 @@
 {
+	    "common": {
+        "label": {
+            "payload": "Payload",
+            "topic": "Topic",
+            "name": "Name",
+            "username": "Username",
+            "password": "Password"
+        },
+        "status": {
+            "connected": "connected",
+            "not-connected": "not connected",
+            "disconnected": "disconnected",
+            "connecting": "connecting",
+            "error": "error",
+            "ok": "OK"
+        },
 	    "httpin": {
         "label": {
             "method": "Method",
