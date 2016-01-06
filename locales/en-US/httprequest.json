@@ -16,7 +16,7 @@
             "ok": "OK"
         }
         },
-	    "httpin": {
+	    "sample": {
         "label": {
             "method": "Method",
             "url": "URL",
