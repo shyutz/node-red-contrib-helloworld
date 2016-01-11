@@ -12,6 +12,8 @@
 -->
 
 <script type="text/x-red" data-template-name="call API">
+
+<!--
     <div class="form-row">
         <label for="node-input-method"><i class="fa fa-tasks"></i> <span data-i18n="httprequest.label.method"></span></label>
         <select type="text" id="node-input-method" style="width:72%;">
@@ -26,6 +28,12 @@
         <label for="node-input-url"><i class="fa fa-globe"></i> <span data-i18n="httprequest.label.url"></span></label>
         <input type="text" id="node-input-url" placeholder="http://">
     </div>
+ -->
+    <div class="form-row">
+        <label for="node-input-param1"><i class="fa fa-param"></i> <span data-i18n="httprequest.label.param1XXX"></span></label>
+        <input type="text" id="node-input-param1" data-i18n="[placeholder]common.label.param1">
+    </div>
+
     <div class="form-row">
         <label>&nbsp;</label>
         <input type="checkbox" id="node-input-useAuth" style="display: inline-block; width: auto; vertical-align: top;">
@@ -39,6 +47,8 @@
         <label for="node-input-password"><i class="fa fa-lock"></i> <span data-i18n="common.label.password"></span></label>
         <input type="password" id="node-input-password">
     </div>
+    
+<!--    
     <div class="form-row">
         <label for="node-input-ret"><i class="fa fa-arrow-left"></i> <span data-i18n="httpin.label.return"></span></label>
         <select type="text" id="node-input-ret" style="width:72%;">
@@ -47,6 +57,8 @@
         <option value="obj" data-i18n="httpin.json"></option>
         </select>
     </div>
+    
+-->
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span></label>
         <input type="text" id="node-input-name" data-i18n="[placeholder]common.label.name">
@@ -80,7 +92,7 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('call API',{
+    RED.nodes.registerType('call APIXXX',{
         category: 'function',
         color:"rgb(231, 231, 174)",
         defaults: {

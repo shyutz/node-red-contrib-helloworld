@@ -18,6 +18,7 @@
         },
 	    "httprequest": {
         "label": {
+            "param1":"stock id",
             "method": "Method",
             "url": "URL",
             "doc": "Docs",
