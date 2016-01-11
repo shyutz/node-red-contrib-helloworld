@@ -176,7 +176,7 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("call API",HTTPRequest,{
+    RED.nodes.registerType("call APIXXX",HTTPRequest,{
         credentials: {
             user: {type:"text"},
             password: {type: "password"}
