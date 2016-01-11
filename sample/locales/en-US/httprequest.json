@@ -16,7 +16,7 @@
             "ok": "OK"
         }
         },
-	    "sample": {
+	    "httprequest": {
         "label": {
             "method": "Method",
             "url": "URL",
