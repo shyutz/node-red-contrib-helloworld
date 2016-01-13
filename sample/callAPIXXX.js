@@ -26,6 +26,9 @@ module.exports = function(RED) {
     function HTTPRequest(n) {
         RED.nodes.createNode(this,n);
         var nodeParam1 = n.param1;
+        if (!nodeParam1){
+        	nodeParam1="1001";
+        }
         var url = "http://finance.google.com/finance/info?client=ig&q=TPE:"+ nodeParam1;
         var opts = urllib.parse(url);
             opts.method = "GET";
@@ -49,7 +52,7 @@ module.exports = function(RED) {
                 msg.statusCode = res.statusCode;
                 msg.headers = res.headers;
                 msg.payload = "";
-                // msg.url = url;   // revert when warning above finally removed
+                msg.url = url;   // revert when warning above finally removed
                 res.on('data',function(chunk) {
                     msg.payload += chunk;
                 });
