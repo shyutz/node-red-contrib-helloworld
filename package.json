@@ -9,7 +9,8 @@
     "keywords": [ "node-red" ],
     "node-red"     : {
         "nodes": {
-            "sample": "sample/callAPIXXX.js"
+            "callAPI001": "apisample/callAPIXXX.js", 
+            "callAPI002": "apisample/callAPI001.js"
         }
     }
 }
