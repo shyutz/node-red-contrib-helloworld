@@ -37,10 +37,6 @@ module.exports = function(RED) {
  
             node.status({fill:"blue",shape:"dot",text:"httpin.status.requesting"});            
           
-           
-            if (this.credentials && this.credentials.user) {
-                opts.auth = this.credentials.user+":"+(this.credentials.password||"");
-            }
  
             var req = ((/^https/.test(url))?https:http).request(opts,function(res) {
                 res.setEncoding(encoding);
