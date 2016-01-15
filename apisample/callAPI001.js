@@ -24,9 +24,6 @@ module.exports = function(RED) {
     function HTTPRequest(n) {
         RED.nodes.createNode(this,n);
         var nodeParam1 = n.param1;
-        if (!nodeParam1){
-        	nodeParam1="1101";
-        }
         var url = "http://finance.google.com/finance/info?client=ig&q=TPE:"+ nodeParam1;
         var opts = urllib.parse(url);
             opts.method = "GET";
