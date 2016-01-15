@@ -3,14 +3,13 @@
     "version"      : "0.0.1",
     "description"  : "A sample node for node-red",
     "dependencies": {
-        "follow-redirects":"0.0.7",
-        "mustache": "2.2.0"
+        "follow-redirects":"0.0.7" 
     },
     "keywords": [ "node-red" ],
     "node-red"     : {
         "nodes": {
-            "callAPI001": "apisample/callAPIXXX.js", 
-            "callAPI002": "apisample/callAPI001.js"
+            "callAPIXXX": "apisample/callAPIXXX.js", 
+            "callAPI001": "apisample/callAPI001.js"
         }
     }
 }

@@ -20,8 +20,6 @@ module.exports = function(RED) {
     var http = require("follow-redirects").http;
     var https = require("follow-redirects").https;
     var urllib = require("url");
-//    var mustache = require("mustache");
-//    var querystring = require("querystring");
 
     function HTTPRequest(n) {
         RED.nodes.createNode(this,n);
