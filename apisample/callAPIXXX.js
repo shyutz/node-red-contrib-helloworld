@@ -23,7 +23,7 @@ module.exports = function(RED) {
 //    var mustache = require("mustache");
 //    var querystring = require("querystring");
 
-    function HTTPRequest(n) {
+    function CALLAPIXXX(n) {
         RED.nodes.createNode(this,n);
         var nodeParam1 = n.param1;
         if (!nodeParam1){
@@ -77,7 +77,7 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("call APIXXX",HTTPRequest,{
+    RED.nodes.registerType("call APIXXX",CALLAPIXXX,{
         credentials: {
             user: {type:"text"},
             password: {type: "password"}

@@ -21,9 +21,11 @@ module.exports = function(RED) {
     var https = require("follow-redirects").https;
     var urllib = require("url");
 
-    function HTTPRequest(n) {
+    function CallAPI001(n) {
         RED.nodes.createNode(this,n);
+        
         var nodeParam1 = n.param1;
+        
         var url = "http://finance.google.com/finance/info?client=ig&q=TPE:"+ nodeParam1;
         var opts = urllib.parse(url);
             opts.method = "GET";
@@ -68,7 +70,7 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("call API001",HTTPRequest,{
+    RED.nodes.registerType("call API001",CallAPI001,{
         credentials: {
             user: {type:"text"},
             password: {type: "password"}
