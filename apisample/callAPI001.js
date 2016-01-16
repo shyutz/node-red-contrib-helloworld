@@ -70,10 +70,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("call API001",CallAPI001,{
-        credentials: {
-            user: {type:"text"},
-            password: {type: "password"}
-        }
-    });
+    RED.nodes.registerType("call API001",CallAPI001);
 }
