@@ -21,7 +21,7 @@ module.exports = function(RED) {
     var https = require("follow-redirects").https;
     var urllib = require("url");
 
-    function CallAPI001(n) {
+    function getStock(n) {
         RED.nodes.createNode(this,n);
         
         var nodeParam1 = n.param1;
