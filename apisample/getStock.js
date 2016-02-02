@@ -70,5 +70,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("call API001",CallAPI001);
+    RED.nodes.registerType("getStock",getStock);
 }
