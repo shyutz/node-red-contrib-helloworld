@@ -11,7 +11,7 @@
   limitations under the License.
 -->
 
-<script type="text/x-red" data-template-name="call API001">
+<script type="text/x-red" data-template-name="getStock">
 
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span></label>
@@ -26,7 +26,7 @@
     <div class="form-tips" id="tip-json" hidden><span data-i18n="httpin.tip.req"></span></div>
 </script>
 
-<script type="text/x-red" data-help-name="call API001">
+<script type="text/x-red" data-help-name="getStock">
     <p>Provides a node for making http requests.</p>
     <p>The URL and HTTP method can be configured in the node, if they are left blank they should be set in an incoming message on <code>msg.url</code> and <code>msg.method</code>:</p>
 
@@ -40,7 +40,7 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('call API001',{
+    RED.nodes.registerType('getStock',{
         category: 'function',
         color:"rgb(241, 241, 184)",
         defaults: {
